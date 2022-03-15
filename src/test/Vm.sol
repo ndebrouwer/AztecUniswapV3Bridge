@@ -28,4 +28,6 @@ interface Vm {
     function etch(address, bytes calldata) external;
     // Expects an error on next call
     function expectRevert(bytes calldata) external;
+
+    function getCode(string calldata) external returns (bytes memory);
 }
